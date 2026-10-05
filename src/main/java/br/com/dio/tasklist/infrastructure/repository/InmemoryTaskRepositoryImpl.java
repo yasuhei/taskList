@@ -4,8 +4,11 @@ import br.com.dio.tasklist.domain.Task;
 import br.com.dio.tasklist.domain.TaskId;
 import br.com.dio.tasklist.domain.TaskRepository;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.*;
 
+@Repository
 public class InmemoryTaskRepositoryImpl implements TaskRepository {
     private final Map<TaskId, Task> storage = new HashMap<>();
 

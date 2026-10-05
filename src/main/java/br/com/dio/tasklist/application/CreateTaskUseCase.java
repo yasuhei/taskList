@@ -4,7 +4,9 @@ import br.com.dio.tasklist.application.input.CreateTaskInput;
 import br.com.dio.tasklist.application.output.TaskOutput;
 import br.com.dio.tasklist.domain.Task;
 import br.com.dio.tasklist.domain.TaskRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CreateTaskUseCase {
     private final TaskRepository repository;
 
