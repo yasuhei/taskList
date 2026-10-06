@@ -1,0 +1,36 @@
+= Task List API
+:toc:
+
+== Create a task
+
+include::{snippets}/tasks/create/http-request.adoc[]
+include::{snippets}/tasks/create/http-response.adoc[]
+include::{snippets}/tasks/create/request-fields.adoc[]
+include::{snippets}/tasks/create/response-fields.adoc[]
+
+== List tasks
+
+include::{snippets}/tasks/list/http-request.adoc[]
+include::{snippets}/tasks/list/http-response.adoc[]
+include::{snippets}/tasks/list/response-fields.adoc[]
+
+== Read a task
+
+include::{snippets}/tasks/read/http-request.adoc[]
+include::{snippets}/tasks/read/path-parameters.adoc[]
+include::{snippets}/tasks/read/http-response.adoc[]
+include::{snippets}/tasks/read/response-fields.adoc[]
+
+== Delete a task
+
+include::{snippets}/tasks/delete/http-request.adoc[]
+include::{snippets}/tasks/delete/path-parameters.adoc[]
+include::{snippets}/tasks/delete/http-response.adoc[]
+
+== Update a task
+
+include::{snippets}/tasks/update/http-request.adoc[]
+include::{snippets}/tasks/update/path-parameters.adoc[]
+include::{snippets}/tasks/update/request-fields.adoc[]
+include::{snippets}/tasks/update/http-response.adoc[]
+include::{snippets}/tasks/update/response-fields.adoc[]
