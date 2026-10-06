@@ -8,6 +8,7 @@ import br.com.dio.tasklist.domain.TaskId;
 import br.com.dio.tasklist.infrastructure.http.request.CreateTaskRequest;
 import br.com.dio.tasklist.infrastructure.http.request.UpdateTaskRequest;
 import br.com.dio.tasklist.infrastructure.http.response.TaskResponse;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,7 +35,7 @@ import java.util.UUID;
     }
 
     @PostMapping
-    TaskResponse create(@RequestBody CreateTaskRequest request) {
+    TaskResponse create(@RequestBody @Valid CreateTaskRequest request) {
         var input = request.toInput();
         var output  =  createTaskUseCase.execute(input);
         return TaskResponse.from(output);
